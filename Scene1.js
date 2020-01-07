@@ -4,7 +4,7 @@ class Scene1 extends Phaser.Scene {
     }
 
     create() {
-        this.add.text(300, 200, 'This is Scene1', {fill: '#000000', fontSize: '40px'});
+        this.add.text(200, 100, 'This is Scene1', {fill: '#000000', fontSize: '20px'});
         this.input.on('pointerdown', () => {
             this.scene.stop('Scene1');
             this.scene.start('Scene2')
